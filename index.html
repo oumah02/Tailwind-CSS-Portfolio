@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Portfolio</title>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="font-sans bg-[#E9EED9] text-[#54473F]">
+
+    <header class="fixed top-0 left-0 right-0 z-50 bg-[#54473F] text-white shadow-lg p-4">
+        <div class="container mx-auto flex items-center justify-between">
+            <a href="#">
+                <img src="Oumaima.png" alt="Oumaima Hajji" class="h-16 md:h-20">
+            </a>
+            
+            <nav class="hidden md:flex space-x-8">
+                <a href="#home" class="hover:text-[#CBD2A4] transition duration-300 border-b-2 border-transparent hover:border-[#CBD2A4] pb-1">Accueil</a>
+                <a href="#about" class="hover:text-[#CBD2A4] transition duration-300 border-b-2 border-transparent hover:border-[#CBD2A4] pb-1">À propos</a>
+                <a href="#projects" class="hover:text-[#CBD2A4] transition duration-300 border-b-2 border-transparent hover:border-[#CBD2A4] pb-1">Projets</a>
+                <a href="#contact" class="hover:text-[#CBD2A4] transition duration-300 border-b-2 border-transparent hover:border-[#CBD2A4] pb-1">Contact</a>
+            </nav>
+            
+            <button class="md:hidden text-3xl" onclick="toggleMenu()">
+                <i data-feather="menu"></i>
+            </button>
+        </div>
+
+        <div id="mobileMenu" class="hidden md:hidden bg-[#54473F] text-white p-4 space-y-4 mt-4 rounded-lg shadow-lg">
+            <a href="#home" class="block hover:text-[#CBD2A4] transition duration-300">Accueil</a>
+            <a href="#about" class="block hover:text-[#CBD2A4] transition duration-300">À propos</a>
+            <a href="#projects" class="block hover:text-[#CBD2A4] transition duration-300">Projets</a>
+            <a href="#contact" class="block hover:text-[#CBD2A4] transition duration-300">Contact</a>
+        </div>
+    </header>
+
+    <section id="home" class="relative h-80 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1649626284358-71fc246a896a?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NzJ8fGJlaWdlJTIwYmFja2dyb3VuZHxlbnwwfHwwfHx8MA%3D%3D'); margin-top: 64px;">
+        <div class="absolute inset-0 bg-black opacity-50"></div>
+        <div class="relative text-center text-white z-10 pt-32">
+            <h2 class="text-4xl md:text-6xl font-bold">Bienvenue sur mon portfolio !</h2>
+            <p class="mt-4 text-xl">Développeuse web passionnée par les nouvelles technologies.</p>
+        </div>
+    </section>
+
+    <script>
+        function toggleMenu() {
+            const mobileMenu = document.getElementById('mobileMenu');
+            mobileMenu.classList.toggle('hidden');
+        }
+        feather.replace();
+    </script>
+
+<section id="about" class="py-16 px-8 bg-[#CBD2A4]">
+    <h2 class="text-4xl font-bold text-center text-[#54473F] mb-8 border-b-4 border-[#9A7E6F] inline-block mx-auto pb-2">
+        À propos de moi
+    </h2>
+    <div class="flex flex-col md:flex-row items-center gap-12">
+        
+        <div class="bg-white p-8 rounded-lg shadow-lg w-full md:w-2/3 text-left">
+            <p class="text-lg text-[#54473F] mb-6">
+                Je suis une développeuse web passionnée par l'informatique et les nouvelles technologies. J'ai une formation solide en informatique et une expérience pratique dans la création de solutions interactives pour l'éducation.
+            </p>
+
+            <h3 class="font-semibold text-[#9A7E6F] text-xl mb-4">Éducation :</h3>
+            <ul class="list-disc pl-5 space-y-3 text-[#54473F]">
+                <li><span class="font-semibold">2020 - 2023 :</span> Licence fondamentale en Informatique - École Normale Supérieure, Marrakech</li>
+                <li><span class="font-semibold">2019 - 2020 :</span> 1ère année Licence fondamentale en Économie et Gestion - Faculté des Sciences Juridiques, Économiques et Sociales, Salé</li>
+                <li><span class="font-semibold">2018 - 2019 :</span> Baccalauréat en Sciences Physiques - Option Français - École Achbal Karaouienne, Salé</li>
+            </ul>
+
+            <h3 class="font-semibold text-[#9A7E6F] text-xl mb-4">Loisirs :</h3>
+            <div class="flex justify-start space-x-8 mb-6">
+                <div class="text-center">
+                    <i data-feather="music" class="text-3xl text-[#54473F]"></i>
+                    <p class="mt-2 text-[#54473F]">Musique</p>
+                </div>
+                <div class="text-center">
+                    <i data-feather="book-open" class="text-3xl text-[#54473F]"></i>
+                    <p class="mt-2 text-[#54473F]">Lecture</p>
+                </div>
+                <div class="text-center">
+                    <div class="flex items-center justify-center space-x-2">
+                        <i data-feather="airplane" class="text-3xl text-[#54473F]"></i>
+                        <i data-feather="globe" class="text-3xl text-[#54473F]"></i>
+                    </div>
+                    <p class="mt-2 text-[#54473F]">Voyage</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="relative">
+            <img src="photo-profil.png" alt="Oumaima Hajji" w-68 h-68>
+        </div>
+    </div>
+</section>
+
+
+    <section id="skills" class="py-16 px-8">
+        <h2 class="text-3xl font-semibold text-center mb-8">Mes compétences</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+            <div class="bg-[#9A7E6F] text-white p-6 rounded-lg shadow-lg hover:bg-[#54473F] transition-all">
+                <div class="flex items-center space-x-4">
+                    <i data-feather="code" class="text-4xl"></i>
+                    <h3 class="text-xl font-semibold">Développement Web</h3>
+                </div>
+                <p class="mt-4">HTML, CSS3, JavaScript, et l'intégration de frameworks comme Bootstrap.</p>
+            </div>
+            <div class="bg-[#9A7E6F] text-white p-6 rounded-lg shadow-lg hover:bg-[#54473F] transition-all">
+                <div class="flex items-center space-x-4">
+                    <i data-feather="server" class="text-4xl"></i>
+                    <h3 class="text-xl font-semibold">Administration Système</h3>
+                </div>
+                <p class="mt-4">Gestion des systèmes sous Linux et Windows Server, ainsi que des bases de données MySQL.</p>
+            </div>
+            <div class="bg-[#9A7E6F] text-white p-6 rounded-lg shadow-lg hover:bg-[#54473F] transition-all">
+                <div class="flex items-center space-x-4">
+                    <i data-feather="file-text" class="text-4xl"></i>
+                    <h3 class="text-xl font-semibold">Outils Bureautiques</h3>
+                </div>
+                <p class="mt-4">Compétence dans l'utilisation de Word, Excel, et PowerPoint pour des solutions efficaces.</p>
+            </div>
+            <div class="bg-[#9A7E6F] text-white p-6 rounded-lg shadow-lg hover:bg-[#54473F] transition-all">
+                <div class="flex items-center space-x-4">
+                    <i data-feather="layers" class="text-4xl"></i>
+                    <h3 class="text-xl font-semibold">Création de Contenus Éducatifs</h3>
+                </div>
+                <p class="mt-4">Conception d'outils et de plateformes interactives pour améliorer l'apprentissage en ligne.</p>
+            </div>
+            <div class="bg-[#9A7E6F] text-white p-6 rounded-lg shadow-lg hover:bg-[#54473F] transition-all">
+                <div class="flex items-center space-x-4">
+                    <i data-feather="database" class="text-4xl"></i>
+                    <h3 class="text-xl font-semibold">Gestion de Bases de Données</h3>
+                </div>
+                <p class="mt-4">Expérience dans la gestion et la maintenance des bases de données éducatives.</p>
+            </div>
+            <div class="bg-[#9A7E6F] text-white p-6 rounded-lg shadow-lg hover:bg-[#54473F] transition-all">
+                <div class="flex items-center space-x-4">
+                    <i data-feather="smartphone" class="text-4xl"></i>
+                    <h3 class="text-xl font-semibold">Développement Mobile</h3>
+                </div>
+                <p class="mt-4">Création d'applications mobiles pour Android en utilisant des technologies modernes.</p>
+            </div>
+        </div>
+    </section>
+
+<section id="projects" class="py-16 px-8 bg-[#54473F] text-white">
+    <h2 class="text-3xl font-semibold text-center mb-8">Mes Projets</h2>
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+        <div class="bg-white text-[#54473F] p-6 rounded-lg shadow-lg">
+            <img src="Projet1.png" alt="Projet 1" class="w-500 h-500 object-cover rounded-t-lg">
+            <h3 class="text-xl font-semibold mt-4">Agence de voyage</h3>
+            <p class="text-gray-600">Ce projet est une page d'une agence de voyage en ligne responsive, conçue pour s’adapter à différents écrans (mobile, tablette, ordinateur). Le HTML et le CSS sont séparés pour une meilleure organisation.</p>
+            <a href="https://oumah02.github.io/Agence-de-voyage/" class="text-[#54473F] hover:underline mt-4 block">Voir le projet</a>
+        </div>
+        <div class="bg-white text-[#54473F] p-6 rounded-lg shadow-lg">
+            <img src="Projet2.png" alt="Projet 2" class="w-500 h-500 object-cover rounded-t-lg">
+            <h3 class="text-xl font-semibold mt-4">Restaurant</h3>
+            <p class="text-gray-600">Ce projet est une page d'un restaurant responsive, conçue pour s’adapter à différents écrans (mobile, tablette, ordinateur). Le HTML et le CSS sont séparés pour une meilleure organisation.</p>
+            <a href="https://oumah02.github.io/Restaurant/" class="text-[#54473F] hover:underline mt-4 block">Voir le projet</a>
+        </div>
+        <div class="bg-white text-[#54473F] p-6 rounded-lg shadow-lg">
+            <img src="Projet3.png" alt="Projet 3" class="w-500 h-500 object-cover rounded-t-lg">
+            <h3 class="text-xl font-semibold mt-4">Online-Store</h3>
+            <p class="text-gray-600">Ce projet est une page d'une boutique en ligne responsive, conçue pour s’adapter à différents écrans (mobile, tablette, ordinateur). Le HTML et le CSS sont séparés pour une meilleure organisation.</p>
+            <a href="https://oumah02.github.io/Checkpoint-Responsive-Store-Landing-Page-Design/" class="text-[#54473F] hover:underline mt-4 block">Voir le projet</a>
+        </div>
+    </div>
+</section>
+
+    <section id="contact" class="py-16 px-8">
+        <h2 class="text-3xl font-semibold text-center mb-8">Contactez-moi</h2>
+        <form action="#" class="max-w-lg mx-auto">
+            <input type="text" placeholder="Nom" class="w-full p-4 mb-4 rounded-lg text-[#54473F]">
+            <input type="email" placeholder="Email" class="w-full p-4 mb-4 rounded-lg text-[#54473F]">
+            <textarea placeholder="Votre message..." class="w-full p-4 mb-4 rounded-lg text-[#54473F]"></textarea>
+            <button type="submit" class="w-full bg-[#54473F] p-4 text-white rounded-lg hover:bg-[#9A7E6F]">Envoyer</button>
+        </form>
+    </section>
+
+    <footer class="bg-[#CBD2A4] text-white py-8">
+        <div class="flex justify-center space-x-6">
+            <a href="https://github.com/oumah02" class="hover:text-[#9A7E6F]">
+                <i data-feather="github" class="text-3xl"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/oumaima-hajji-b02781202/" class="hover:text-[#9A7E6F]">
+                <i data-feather="linkedin" class="text-3xl"></i>
+            </a>
+            <a href="https://x.com/Oumah02" class="hover:text-[#9A7E6F]">
+                <i data-feather="twitter" class="text-3xl"></i>
+            </a>
+        </div>
+        <p class="text-center mt-4">© 2024 Oumaima Hajji - Tous droits réservés</p>
+    </footer>
+
+    <script>
+        feather.replace();
+
+        function toggleNavbar() {
+            const navbar = document.querySelector('.navbar');
+            navbar.classList.toggle('active');
+        }
+    </script>
+</body>
+
+</html>
